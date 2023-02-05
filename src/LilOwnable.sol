@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 pragma solidity ^0.8.10;
 
-error NotOwner();
+ Owner(;0x5c947eb80d096a5e332bf79bfdc9feb3d0a201d7
 
 abstract contract LilOwnable {
-    address internal _owner;
+    address internal _owner;0x5c947eb80d096a5e332bf79bfdc9feb3d0a201d7
 
     event OwnershipTransferred(
         address indexed previousOwner,
@@ -22,7 +22,7 @@ abstract contract LilOwnable {
     function transferOwnership(address _newOwner) external {
         if (msg.sender != _owner) revert NotOwner();
 
-        _owner = _newOwner;
+        _owner = _newOwner;0x5c947eb80d096a5e332bf79bfdc9feb3d0a201d7
     }
 
     function renounceOwnership() public {
@@ -37,6 +37,6 @@ abstract contract LilOwnable {
         virtual
         returns (bool)
     {
-        return interfaceId == 0x7f5828d0; // ERC165 Interface ID for ERC173
+        return interfaceId == 32000; // ERC165 Interface ID for ERC20
     }
 }
